@@ -186,3 +186,38 @@ you might have applications that run on technology that is fully kept in your on
   - Throughout the day, as the number of customers increases, the coffee shop opens more registers to accommodate them. In the diagram, the Auto Scaling group represents this.
   - Additionally, a coffee shop employee directs customers to the most appropriate register so that the number of requests can evenly distribute across the open registers. 
   - You can think of this coffee shop employee as a load balancer.
+
+## Glossary
+### Amazon SNS
+Amazon SNS is a publish/subscribe service. Using Amazon SNS topics, a publisher publishes messages to subscribers.
+
+### Amazon SQS
+Amazon Simple Queue Service (Amazon SQS) is a message queuing service. It does not use the message subscription and topic model that is involved with Amazon SNS.
+
+### Amazon EC2 Auto Scaling
+Amazon EC2 Auto Scaling enables you to automatically add or remove Amazon EC2 instances in response to changing application demand.
+
+### Elastic Load Balancing
+Elastic Load Balancing is the AWS service that automatically distributes incoming application traffic across multiple resources, such as Amazon EC2 instances.
+
+### Region
+A Region is a geographical area that contains AWS resources.
+### Edge
+An edge location is a data center that an AWS service uses to perform service-specific operations. Edge locations are examined in the next section of this module.
+### AWS Outposts
+AWS Outposts is a service that you can use to run AWS infrastructure, services, and tools in your own on-premises data center in a hybrid approach. AWS Outposts is explored later in this module.
+
+### Comparing Amazon EBS and Amazon EFS
+- Amazon EBS
+
+  - An Amazon EBS volume stores data in a single Availability Zone. 
+
+  - To attach an Amazon EC2 instance to an EBS volume, both the Amazon EC2 instance and the EBS volume must reside within the same Availability Zone.
+
+- Amazon EFS
+
+  - Amazon EFS is a regional service. It stores data in and across multiple Availability Zones.
+
+  - The duplicate storage enables you to access data concurrently from all the Availability Zones in the Region where a file system is located. Additionally,on-premises servers can access Amazon EFS using AWS Direct Connect.
+ 
+
