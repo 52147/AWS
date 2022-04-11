@@ -124,28 +124,28 @@ AWS systems manager(SSM):
 servive client object:
 - To make a request to Amazon Web Services, you first create service client objects fot this specific AWS service you are trying to interact with.
 - The recommended way to do this is to use the Service Client Builder.
-- 
+
 
 ## AWS exception:
 
-Notice how there weren't any try catch blocks or throw statements for AWS specific exceptions. 
-That is because the AWS SDK for Java uses unchecked exceptions. 
-There are two main categories of exceptions to be aware of. 
+- Notice how there weren't any try catch blocks or throw statements for AWS specific exceptions. 
+- That is because the AWS SDK for Java uses unchecked exceptions. 
+- There are two main categories of exceptions to be aware of. 
   1. AmazonServiceException :
-     First, you have the AmazonServiceException or one of its subclasses. This is the most common exception that you'll experience when using the AWS SDK for Java. 
-     This exception represents an error response from an AWS service. For example, if you try to read data from an S3 bucket that doesn't exist, you would receive an Amazon S3 exception, which is a subclass of the AmazonServiceException class. The second category of exceptions are AmazonClientExceptions. 
+     - First, you have the AmazonServiceException or one of its subclasses. This is the most common exception that you'll experience when using the AWS SDK for Java. 
+     - This exception represents an error response from an AWS service. For example, if you try to read data from an S3 bucket that doesn't exist, you would receive an Amazon S3 exception, which is a subclass of the AmazonServiceException class. The second category of exceptions are AmazonClientExceptions. 
   2. AmazonClientException :
-     An AmazonClientException indicates that a problem occurred inside the Java client code, either while trying to send a request to AWS or while trying to parse a response from AWS. 
-     For example, if your code tries to make an API call but has no access to the Internet, you would get this type of exception. 
+     - An AmazonClientException indicates that a problem occurred inside the Java client code, either while trying to send a request to AWS or while trying to parse a response from AWS. 
+     - For example, if your code tries to make an API call but has no access to the Internet, you would get this type of exception. 
 
 
 
 ## AWS serverless application model(SAM):
-The AWS Serverless Application Model, or SAM, is an open-source framework for building serverless applications. 
-It provides shorthand syntax to express functions, APIs, databases and more, giving you the ability to define an application you want to model using a few short lines per resource. 
-During deployment, SAM transforms and expands the SAM syntax into AWS cloud formation syntax, enabling you to build serverless applications faster. 
-A serverless application in this case is a combination of AWS Lambda functions, event resources, and other resources that work together to perform your distributed tasks. 
-SAM consists of two main components, 
+- The AWS Serverless Application Model, or SAM, is an open-source framework for building serverless applications. 
+- It provides shorthand syntax to express functions, APIs, databases and more, giving you the ability to define an application you want to model using a few short lines per resource. 
+- During deployment, SAM transforms and expands the SAM syntax into AWS cloud formation syntax, enabling you to build serverless applications faster. 
+- A serverless application in this case is a combination of AWS Lambda functions, event resources, and other resources that work together to perform your distributed tasks. 
+- SAM consists of two main components, 
   -  AWS SAM template specification and AWS SAM command line interface. 
     1. The SAM template specification:  
        - is used to define the serverless application. 
@@ -167,14 +167,14 @@ SAM consists of two main components,
      - Also, because SAM enables you to templatize what you're deploying, it makes it possible for you to use and enforce best practices, such as code reviews. 
      - And because this is a template, you are able to test and deploy the same environment without as much worry about unintended changes.
 
-SAM can build severless application:
-Additionally, you can use SAM with a suite of AWS tools for building serverless applications. 
-You can discover new applications in the AWS serverless application repository. 
-You can use the AWS Cloud9 IDE to author, test, and debug your SAM-based serverless applications. 
-You can build a deployment pipeline for your serverless applications using AWS CodeBuild, AWS CodeDeploy, and AWS CodePipeline. 
-And you can even use AWS CodeStar to build out project structure, code repository, and a CI/CD pipeline that's automatically configured for you
+- SAM can build severless application:
+- Additionally, you can use SAM with a suite of AWS tools for building serverless applications. 
+- You can discover new applications in the AWS serverless application repository. 
+- You can use the AWS Cloud9 IDE to author, test, and debug your SAM-based serverless applications. 
+- You can build a deployment pipeline for your serverless applications using AWS CodeBuild, AWS CodeDeploy, and AWS CodePipeline. 
+- And you can even use AWS CodeStar to build out project structure, code repository, and a CI/CD pipeline that's automatically configured for you
 
 
 ## AWS lambda:
-AWS Lambda is a serverless compute service that runs your code in response to events and automatically manages the underlying compute resources for you. 
-These events may include changes in state or an update, such as a user placing an item in a shopping cart on an ecommerce website.
+- AWS Lambda is a serverless compute service that runs your code in response to events and automatically manages the underlying compute resources for you. 
+- These events may include changes in state or an update, such as a user placing an item in a shopping cart on an ecommerce website.
