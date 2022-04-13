@@ -35,6 +35,12 @@ API vs. SDK
 - They go beyond faciliation to provide everything for building new software for a specific platform or programming language.
 
 
+## Mock API
+- A mock API server or mock server API imitates a real API server by providing realistic mock API responses to requests. 
+- They can be on your local machine or the public Internet. 
+- Responses can be static or dynamic, and simulate the data the real API would return, matching the schema with data types, objects, and arrays.
+
+
 ## Credential:
 
 - a subject may own security related attrubutes, whuich are referred to as credentials.
