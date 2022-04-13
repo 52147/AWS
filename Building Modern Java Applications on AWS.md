@@ -40,6 +40,10 @@ API vs. SDK
 - They can be on your local machine or the public Internet. 
 - Responses can be static or dynamic, and simulate the data the real API would return, matching the schema with data types, objects, and arrays.
 
+- A mock API server is useful during development and testing when live data is either unavailable or unreliable. 
+- While designing an API, you can use mock APIs to work concurrently on the front and back-end, as well as to gather feedback from developers. 
+- Our mock API server guide for testing covers how you can use a mock API server so the absence of a real API doesn’t hold you back.
+
 
 ## Credential:
 
